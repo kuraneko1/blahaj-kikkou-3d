@@ -3,18 +3,18 @@
 # BLÅHAJ KIKKOU 3D Viewer
 
 **IKEA サメ（Blåhaj）亀甲縛り ＆「傻眼……」目撃サメ 3D インタラクティブビューワー**  
-**Full-3D GPU リグ版（`TWIST` × `PIXEL+AA` × `DOT SIZE 2.60` 標準）・60 FPS・単体 HTML 完結**
+**Full-3D GPU リグ版（`TWIST` × `PIXEL+AA` × `DOT SIZE 1.30` 標準）・60 FPS・単体 HTML 完結**
 
 <p>
   <img src="https://img.shields.io/badge/Engine-WebGL%202--Pass%20SSAA-2e7df6?style=flat-square" alt="WebGL 2-Pass SSAA" />
   <img src="https://img.shields.io/badge/Motion-TWIST%20%C3%97%206%20Actions%20(60FPS)-00b8e6?style=flat-square" alt="60 FPS 6 Motions" />
-  <img src="https://img.shields.io/badge/Preset-PIXEL%2BAA%20%2F%20DOT%202.60-6c5ce7?style=flat-square" alt="PIXEL+AA DOT 2.60" />
+  <img src="https://img.shields.io/badge/Preset-PIXEL%2BAA%20%2F%20DOT%201.30-6c5ce7?style=flat-square" alt="PIXEL+AA DOT 1.30" />
   <img src="https://img.shields.io/badge/Runtime-Single%20HTML%20(802KB)-10b981?style=flat-square" alt="Single HTML 802KB" />
   <img src="https://img.shields.io/badge/License-MIT-f59e0b?style=flat-square" alt="MIT License" />
 </p>
 
 <p>
-  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/"><b>🚀 Live Demo (`TWIST` + `PIXEL+AA 2.6`)</b></a> &nbsp;|&nbsp;
+  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/"><b>🚀 Live Demo (`TWIST` + `PIXEL+AA 1.3`)</b></a> &nbsp;|&nbsp;
   <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/smooth.html">Smooth AA 版</a> &nbsp;|&nbsp;
   <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/pseudo3d.html">128 スライス疑似 3D 版</a>
 </p>
@@ -28,19 +28,19 @@
 <table>
   <tr>
     <td align="center" width="50%">
-      <img src="assets/gifs/twist_pixel26.gif" alt="TWIST 360° PIXEL+AA DOT 2.6" width="380" /><br />
-      <b>5. TWIST（既定：PIXEL+AA / DOT SIZE 2.60）</b><br />
+      <img src="assets/gifs/twist_pixel13.gif" alt="TWIST 360° PIXEL+AA DOT 1.3" width="380" /><br />
+      <b>5. TWIST（既定：PIXEL+AA / DOT SIZE 1.30）</b><br />
       <sub>吊り紐ねじれ＆360°ターンテーブル回転・ぐるぐる目＋火花演出</sub>
     </td>
     <td align="center" width="50%">
-      <img src="assets/gifs/witness_pixel26.gif" alt="DUMBFOUND 3D Witness Meme PIXEL+AA" width="380" /><br />
+      <img src="assets/gifs/witness_pixel13.gif" alt="DUMBFOUND 3D Witness Meme PIXEL+AA" width="380" /><br />
       <b>1. DUMBFOUND（3D 目撃サメ + 傻眼……）</b><br />
       <sub>周囲を泳ぎ回る 3D 目撃サメ＋頭上追従ピクセル吹き出し</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
-      <img src="assets/gifs/chomp_pixel26.gif" alt="CHOMP Shark Snap PIXEL+AA" width="380" /><br />
+      <img src="assets/gifs/chomp_pixel13.gif" alt="CHOMP Shark Snap PIXEL+AA" width="380" /><br />
       <b>4. CHOMP（ガブッと顎アクション）</b><br />
       <sub>ジト目キリッと＋顎ボーン開閉＆先端水しぶき FX</sub>
     </td>
@@ -53,7 +53,7 @@
 </table>
 
 <p align="center">
-  <img src="assets/viewer_preview.png" alt="BLÅHAJ KIKKOU 3D Viewer UI (TWIST + PIXEL+AA DOT 2.60)" width="840" />
+  <img src="assets/viewer_preview.png" alt="BLÅHAJ KIKKOU 3D Viewer UI (TWIST + PIXEL+AA DOT 1.30)" width="840" />
 </p>
 
 ---
@@ -62,7 +62,7 @@
 
 | ファイル | 形式 / 容量 | 特徴・初期設定 |
 | :--- | :--- | :--- |
-| [`index.html`](./index.html) | **単体 HTML（`802 KB`）** | **既定：`5. TWIST`・`PIXEL+AA`・`DOT SIZE 2.60`** / 60 FPS Full-3D GPU リグ |
+| [`index.html`](./index.html) | **単体 HTML（`802 KB`）** | **既定：`5. TWIST`・`PIXEL+AA`・`DOT SIZE 1.30`** / 60 FPS Full-3D GPU リグ |
 | [`smooth.html`](./smooth.html) | 単体 HTML（`802 KB`） | 既定：`1. DUMBFOUND`・`SMOOTH AA` / 同じモデルの滑らかシェーディング版 |
 | [`pseudo3d.html`](./pseudo3d.html) | 単体 HTML（`4.1 MB`） | 128 スライス・スプライトスタッキング版（24 FPS / `.ap3d` 読込＆書き出し対応） |
 | [`models/blahaj-kikkou-full3d.glb`](./models/blahaj-kikkou-full3d.glb) | glTF 2.0 Binary（`765 KB`） | Blender / Unity 等ですぐ使える亀甲縛り Blåhaj 3D モデル（38,624 tris） |
