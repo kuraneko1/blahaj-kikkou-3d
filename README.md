@@ -1,9 +1,11 @@
 <div align="center">
 
+<p><b>English</b> &nbsp;|&nbsp; <a href="./README.ja.md">日本語 (Japanese)</a></p>
+
 # BLÅHAJ KIKKOU 3D Viewer
 
-**IKEA サメ（Blåhaj）亀甲縛り ＆「傻眼……」目撃サメ 3D インタラクティブビューワー**  
-**Full-3D GPU リグ版（`TWIST` × `PIXEL+AA` × `DOT SIZE 1.30` 標準）・60 FPS・単体 HTML 完結**
+**Interactive 3D Viewer for Kikkou-Bound IKEA Shark (Blåhaj) & "傻眼……" Witness Shark**  
+**Full-3D GPU-Rigged Edition (`TWIST` × `PIXEL+AA` × `DOT SIZE 1.30` Default) · 60 FPS · Single Self-Contained HTML**
 
 <p>
   <img src="https://img.shields.io/badge/Engine-WebGL%202--Pass%20SSAA-2e7df6?style=flat-square" alt="WebGL 2-Pass SSAA" />
@@ -15,39 +17,39 @@
 
 <p>
   <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/"><b>🚀 Live Demo (`TWIST` + `PIXEL+AA 1.3`)</b></a> &nbsp;|&nbsp;
-  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/smooth.html">Smooth AA 版</a> &nbsp;|&nbsp;
-  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/pseudo3d.html">128 スライス疑似 3D 版</a>
+  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/smooth.html">Smooth AA Edition</a> &nbsp;|&nbsp;
+  <a href="https://kuraneko1.github.io/blahaj-kikkou-3d/pseudo3d.html">128-Slice Pseudo-3D Edition</a>
 </p>
 
 </div>
 
 ---
 
-外部ライブラリ・サーバー一切不要の**単体 1 ファイル HTML（`802 KB`）**に、60° 亀甲縛り・しっぽの絡め結び・お腹の綿のぷっくり食い込み・吊り紐ねじれ物理・3D 目撃サメ＆「傻眼……」吹き出し・全 6 モーション・ブラウザ内 `.GLB` / `.PNG` 書き出し機能を内蔵しています。
+Packed into a **single zero-dependency HTML file (`802 KB`)** with no external libraries or server required: 60° kikkou shibari ropework, tail-tie wrapping, plush belly indentation, twisting suspension-rope physics, a swimming 3D witness shark with a `"傻眼……"` (dumbfounded) pixel speech bubble, 6 interactive motions, and in-browser `.GLB` / `.PNG` export.
 
 <table>
   <tr>
     <td align="center" width="50%">
       <img src="assets/gifs/twist_pixel13.gif" alt="TWIST 360° PIXEL+AA DOT 1.3" width="380" /><br />
-      <b>5. TWIST（既定：PIXEL+AA / DOT SIZE 1.30）</b><br />
-      <sub>吊り紐ねじれ＆360°ターンテーブル回転・ぐるぐる目＋火花演出</sub>
+      <b>5. TWIST (Default: PIXEL+AA / DOT SIZE 1.30)</b><br />
+      <sub>Twisting suspension rope, 360° turntable orbit, dizzy eyes &amp; sparkle FX</sub>
     </td>
     <td align="center" width="50%">
       <img src="assets/gifs/witness_pixel13.gif" alt="DUMBFOUND 3D Witness Meme PIXEL+AA" width="380" /><br />
-      <b>1. DUMBFOUND（3D 目撃サメ + 傻眼……）</b><br />
-      <sub>周囲を泳ぎ回る 3D 目撃サメ＋頭上追従ピクセル吹き出し</sub>
+      <b>1. DUMBFOUND (3D Witness Shark + 傻眼……)</b><br />
+      <sub>Orbiting 3D witness shark with head-tracking pixel speech bubble</sub>
     </td>
   </tr>
   <tr>
     <td align="center" width="50%">
       <img src="assets/gifs/chomp_pixel13.gif" alt="CHOMP Shark Snap PIXEL+AA" width="380" /><br />
-      <b>4. CHOMP（ガブッと顎アクション）</b><br />
-      <sub>ジト目キリッと＋顎ボーン開閉＆先端水しぶき FX</sub>
+      <b>4. CHOMP (Shark Snap)</b><br />
+      <sub>Fierce squinted eyes, articulated jaw snap &amp; snout water-splash FX</sub>
     </td>
     <td align="center" width="50%">
       <img src="assets/gifs/full3d_orbit.gif" alt="Full-3D 360 & Pitch Orbit" width="380" /><br />
-      <b>Full-3D 全周＆上下チルト（Smooth AA）</b><br />
-      <sub>`-85°〜+90°` 全角度対応 3D 台座＆お腹の裏まで陰影統一</sub>
+      <b>Full-3D 360° &amp; Vertical Pitch Orbit (Smooth AA)</b><br />
+      <sub>Full `-85° to +90°` pitch, 3D frosted pedestal &amp; unified belly shading</sub>
     </td>
   </tr>
 </table>
@@ -58,26 +60,26 @@
 
 ---
 
-## 収録ファイル一覧
+## Included Files
 
-| ファイル | 形式 / 容量 | 特徴・初期設定 |
+| File | Format / Size | Highlights &amp; Default Preset |
 | :--- | :--- | :--- |
-| [`index.html`](./index.html) | **単体 HTML（`802 KB`）** | **既定：`5. TWIST`・`PIXEL+AA`・`DOT SIZE 1.30`** / 60 FPS Full-3D GPU リグ |
-| [`smooth.html`](./smooth.html) | 単体 HTML（`802 KB`） | 既定：`1. DUMBFOUND`・`SMOOTH AA` / 同じモデルの滑らかシェーディング版 |
-| [`pseudo3d.html`](./pseudo3d.html) | 単体 HTML（`4.1 MB`） | 128 スライス・スプライトスタッキング版（24 FPS / `.ap3d` 読込＆書き出し対応） |
-| [`models/blahaj-kikkou-full3d.glb`](./models/blahaj-kikkou-full3d.glb) | glTF 2.0 Binary（`765 KB`） | Blender / Unity 等ですぐ使える亀甲縛り Blåhaj 3D モデル（38,624 tris） |
-| [`models/witness-shark-full3d.glb`](./models/witness-shark-full3d.glb) | glTF 2.0 Binary（`284 KB`） | 目撃サメコンパニオン 3D モデル（14,464 tris） |
-| [`models/blahaj-shibari-3d.ap3d`](./models/blahaj-shibari-3d.ap3d) | `.ap3d` パッケージ（`3.0 MB`） | 疑似 3D スプライトスタック全 6 モーションパッケージ |
+| [`index.html`](./index.html) | **Single HTML (`802 KB`)** | **Default: `5. TWIST` · `PIXEL+AA` · `DOT SIZE 1.30`** / 60 FPS Full-3D GPU Rig |
+| [`smooth.html`](./smooth.html) | Single HTML (`802 KB`) | Default: `1. DUMBFOUND` · `SMOOTH AA` / Smooth-shaded edition of the same model |
+| [`pseudo3d.html`](./pseudo3d.html) | Single HTML (`4.1 MB`) | 128-slice sprite-stacking edition (24 FPS / `.ap3d` import &amp; export supported) |
+| [`models/blahaj-kikkou-full3d.glb`](./models/blahaj-kikkou-full3d.glb) | glTF 2.0 Binary (`765 KB`) | Ready-to-use kikkou-bound Blåhaj 3D model for Blender / Unity (38,624 tris) |
+| [`models/witness-shark-full3d.glb`](./models/witness-shark-full3d.glb) | glTF 2.0 Binary (`284 KB`) | Witness shark companion 3D model (14,464 tris) |
+| [`models/blahaj-shibari-3d.ap3d`](./models/blahaj-shibari-3d.ap3d) | `.ap3d` Package (`3.0 MB`) | Pseudo-3D sprite-stack package containing all 6 motions |
 
-## 操作方法
+## Controls
 
-- **ドラッグ**: 360° 水平回転 ＆ `-85° 〜 +90°` 上下チルト（裏側の亀甲結び＆フロストガラス台座まで確認可能）
-- **ホイール**: ズームイン / アウト
-- **`1`〜`6` / `[` `]`**: モーション切替（`1. DUMBFOUND` / `2. DANGLE` / `3. STRUGGLE` / `4. CHOMP` / `5. TWIST` / `6. BUNGEE`）
-- **`SPACE`**: 再生 / 一時停止（タイムラインの個別フレームクリック＆スクラブも可）
-- **`F` / `B` / `R`**: 顔アップ（`FACE`） / ぷるん弾み（`BOUNCE`） / リセット（`RESET`）
-- **書き出し（右パネル下部）**: `.GLB (3D)` / `.GLB+PET` / `.PNG` をそのままブラウザからダウンロード可能
+- **Drag**: 360° horizontal orbit &amp; `-85° to +90°` vertical pitch (inspect the back knots and frosted-glass pedestal from any angle)
+- **Mouse Wheel**: Zoom in / out
+- **`1`–`6` / `[` `]`**: Switch motion (`1. DUMBFOUND` / `2. DANGLE` / `3. STRUGGLE` / `4. CHOMP` / `5. TWIST` / `6. BUNGEE`)
+- **`SPACE`**: Play / Pause (click or scrub individual timeline frames)
+- **`F` / `B` / `R`**: Focus face (`FACE`) / Plush bounce (`BOUNCE`) / Reset (`RESET`)
+- **Export (bottom-right panel)**: Download `.GLB (3D)`, `.GLB+PET`, or `.PNG` directly from the browser
 
 ---
 
-純 GPU SDF 造形・2-Pass SSAA シルエット＆`AnimeUIKit` は [kuraneko1/anime-pseudo-3d](https://github.com/kuraneko1/anime-pseudo-3d) ワークフローで生成されています。
+Built with pure GPU SDF sculpting, 2-Pass SSAA silhouettes, and `AnimeUIKit` using the [kuraneko1/anime-pseudo-3d](https://github.com/kuraneko1/anime-pseudo-3d) workflow.
